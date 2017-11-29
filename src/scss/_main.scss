@@ -1,0 +1,17 @@
+
+.second {
+  background-color:#00adf2;
+  min-height:620px;
+  .line {
+    background-color:$text-white;
+  }
+  button {
+    transition: background-color 0.5s linear, color 0.5s linear;
+    background-color:transparent;
+    border: 2px solid $text-white;
+    &:hover {
+    background-color:$text-white;
+    color:#00adf2;
+    }
+  }
+}
