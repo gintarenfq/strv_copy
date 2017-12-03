@@ -15,3 +15,27 @@
     }
   }
 }
+
+.second-images {
+  position: relative;
+  top: 0;
+  left: 0;
+  .s-img1 {
+    max-width:30%;
+    position: absolute;
+    top: 91px;
+    left: 291px;
+  }
+  .s-img2 {
+    max-width:80%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 991px)  {
+  .s-img1 {
+    display:none;
+  }
+}
