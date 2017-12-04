@@ -89,6 +89,7 @@ h1 {
 }
 
 .cover-footer {
+  animation: 2s ease-out 0s 1 slideInFromBottom;
   padding: 20px 0;
   img {
     width:100px;
@@ -113,7 +114,7 @@ p {
 
 .info {
   /* This section calls the slideInFromBottom animation we defined above */
-  animation: 1s ease-out 0s 1 slideInFromBottom;
+  animation: 2s ease-out 0s 1 slideInFromBottom;
   padding: 30px 30px 50px 0;
   button {
     background-color:$strv-red;
@@ -125,6 +126,18 @@ p {
     border: 2px solid transparent;
     border-radius: 2px;
     margin-top:15px;
+    transition: opacity .25s ease;
+    opacity: 1;
+    &:hover {
+      opacity:0.7;
+    }
+    span {
+     transform: translateX(0) scale(1);
+     transition: transform .25s ease;
+      &:hover {
+          transform:translateX(-10px) scale(1);
+        }
+    }
   }
 }
 
