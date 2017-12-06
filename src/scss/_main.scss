@@ -35,8 +35,46 @@
   }
 }
 
+.third {
+  background-color:#ffffff;
+}
+.reference {
+    padding: 8em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  img {
+    max-width:100px;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:10px auto;
+  }
+  q {
+    display:block;
+    font-size:1.5em;
+    font-family:$main-font;
+    color:#565656;
+    font-style: italic;
+    text-align: center;
+    padding:10px 0;
+  }
+  span {
+    font-weight:bold;
+    .author {
+      color:#000000;
+    }
+    .company {
+      color:#cccccc;
+    }
+  }
+
+}
+
 @media screen and (max-width: 991px)  {
   .s-img1 {
     display:none;
+  }
+  .reference {
+    padding:2em;
   }
 }

@@ -92,7 +92,11 @@ h1 {
   animation: 2s ease-out 0s 1 slideInFromBottom;
   padding: 20px 0;
   img {
-    width:100px;
+    width:130px;
+    padding:0 10px;
+  }
+  p {
+    display:inline;
   }
 }
 
