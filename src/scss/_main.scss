@@ -26,6 +26,9 @@
     position: absolute;
     top: 91px;
     left: 291px;
+    @media screen and (max-width: $break-md)  {
+      display:none;
+    }
   }
   .s-img2 {
     max-width:80%;
@@ -67,14 +70,7 @@
       color:#cccccc;
     }
   }
-
-}
-
-@media screen and (max-width: 991px)  {
-  .s-img1 {
-    display:none;
-  }
-  .reference {
+  @media screen and (max-width: $break-md)  {
     padding:2em;
   }
 }
