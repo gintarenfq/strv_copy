@@ -1,8 +1,8 @@
 
 .second {
   animation: 2s ease-out 0s 1 slideInFromBottom;
-  background-color:#00adf2;
-  min-height:620px;
+  background-color:$strv-blue;
+  min-height:$min-height;
   .line {
     background-color:$text-white;
   }
@@ -36,6 +36,10 @@
     top: 0;
     left: 0;
   }
+  @media screen and (max-width: $break-md)  {
+    order:-1;
+    padding:2em 0;
+  }
 }
 
 .third {
@@ -61,16 +65,83 @@
     text-align: center;
     padding:10px 0;
   }
-  span {
+  .author {
+    color:#000000;
     font-weight:bold;
-    .author {
-      color:#000000;
-    }
-    .company {
-      color:#cccccc;
-    }
+  }
+  .company {
+    color:#cccccc;
   }
   @media screen and (max-width: $break-md)  {
     padding:2em;
+  }
+}
+
+.fourth {
+  background-color:#fda172;
+}
+
+.ref2 {
+    padding: 8em;
+    display:table-cell;
+  .fourth-content {
+    text-align:center
+  }
+  img {
+    max-width:100px;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:10px auto;
+  }
+  q {
+    display:block;
+    font-size:1.5em;
+    font-family:$main-font;
+    color:#565656;
+    font-style: italic;
+    text-align: center;
+    padding:10px 0;
+  }
+  .author {
+    color:#000000;
+    font-weight:bold;
+  }
+  .company {
+    color:#cccccc;
+  }
+  @media screen and (max-width: $break-md)  {
+    padding:2em;
+  }
+}
+
+.table {
+  display:table;
+  margin:0;
+}
+
+.table-cell {
+  display:table-cell;
+  @media screen and (max-width: $break-md)  {
+    display:block;
+  }
+}
+
+.fifth {
+  background-color:$strv-blue;
+  min-height:$min-height;
+  img {
+    max-width:80%;
+  }
+  .info-width {
+    width:50%;
+  }
+  .talign-right {
+    text-align:right;
+  }
+  .height100 {
+    min-height:$min-height;
+  }
+  .valign-middle {
+    vertical-align: middle;
   }
 }
