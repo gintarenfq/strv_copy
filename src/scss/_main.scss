@@ -1,18 +1,21 @@
 
 .second {
   animation: 2s ease-out 0s 1 slideInFromBottom;
-  background-color:#00adf2;
-  min-height:620px;
+  background-color: #00adf2;
+  min-height: 620px;
+
   .line {
-    background-color:$text-white;
+    background-color: $text-white;
   }
+
   button {
     transition: background-color 0.5s linear, color 0.5s linear;
-    background-color:transparent;
+    background-color: transparent;
     border: 2px solid $text-white;
+
     &:hover {
-    background-color:$text-white;
-    color:#00adf2;
+    background-color: $text-white;
+    color: #00adf2;
     }
   }
 }
@@ -21,14 +24,16 @@
   position: relative;
   top: 0;
   left: 0;
+
   .s-img1 {
-    max-width:30%;
+    max-width: 30%;
     position: absolute;
     top: 91px;
     left: 291px;
   }
+
   .s-img2 {
-    max-width:80%;
+    max-width: 80%;
     position: relative;
     top: 0;
     left: 0;
@@ -36,45 +41,51 @@
 }
 
 .third {
-  background-color:#ffffff;
+  background-color: #fff;
 }
+
 .reference {
     padding: 8em;
     display: flex;
     flex-flow: column;
     align-items: center;
+
   img {
-    max-width:100px;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:10px auto;
+    max-width: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 10px auto;
   }
+
   q {
-    display:block;
-    font-size:1.5em;
-    font-family:$main-font;
-    color:#565656;
+    display: block;
+    font-size: 1.5em;
+    font-family: $main-font;
+    color: #565656;
     font-style: italic;
     text-align: center;
-    padding:10px 0;
-  }
-  span {
-    font-weight:bold;
-    .author {
-      color:#000000;
-    }
-    .company {
-      color:#cccccc;
-    }
+    padding: 10px 0;
   }
 
+  span {
+    font-weight: bold;
+
+    .author {
+      color: #000;
+    }
+
+    .company {
+      color: #ccc;
+    }
+  }
 }
 
-@media screen and (max-width: 991px)  {
+@media screen and (max-width: 991px) {
   .s-img1 {
-    display:none;
+    display: none;
   }
+
   .reference {
-    padding:2em;
+    padding: 2em;
   }
 }
